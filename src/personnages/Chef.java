@@ -26,7 +26,8 @@ public void parler(String texte) {
 }
 
 private String prendreParole() {
-	return "Le chef " + nom + " du village " + village.getNom() + " : ";
+	return "";
+	//return "Le chef " + nom + " du village " + village.getNom() + " : ";
 }
 
 public void frapper(Romain romain) {

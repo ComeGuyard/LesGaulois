@@ -34,6 +34,12 @@ public void recevoirCoup(int forceCoup) {
 }
 	
 public static void main(String[] args) {
-		//TODO un main pour tester les methodes de Romain
+		Romain minus= new Romain("Minus",6);
+		
+		minus.parler("Je suis un romain");
+		
+		minus.recevoirCoup(3);
+		minus.recevoirCoup(3);
+		
 }
 }

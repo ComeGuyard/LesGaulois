@@ -32,16 +32,19 @@ public class Gaulois {
 	public String toString() {
 		return "Gaulois [nom=" + nom + ", force=" + force + ", effetPotion=" + effetPotion + "]";
 	} 
+	
+	public void boirePotion(int forcePotion) {
+		effetPotion=forcePotion;
+		parler("Merci Druide, je sens que ma forcé est multipliée par " + effetPotion);
+	}
 
 	public static void main(String[] args) {
 		Gaulois asterix;
 		asterix = new Gaulois("Astérix", 8);
 		System.out.println(asterix);
 		
-		asterix.parler("Il parle");
-		
-		Romain romain1 = new Romain("Romain 1",2);
-		asterix.frapper(romain1);
+		asterix.boirePotion(3);
+		asterix.boirePotion(0);
 	}
 
 }

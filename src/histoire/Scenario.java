@@ -15,7 +15,7 @@ public class Scenario {
 		Gaulois obelix = new Gaulois("Obélix",100);
 		
 		
-		panoramix.parler("Je vais aller préparer une petite potion");
+		panoramix.parler("Je vais aller préparer une petite potion.");
 		panoramix.preparerPotion();
 		
 		panoramix.booster(obelix);

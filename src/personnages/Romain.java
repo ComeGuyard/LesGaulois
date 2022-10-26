@@ -8,6 +8,9 @@ private String nom;
 private int force;
 
 public Romain(String nom, int force) {
+	
+	assert force >= 0 ;
+	
 	this.nom = nom;
 	this.force = force;
 }
@@ -25,11 +28,17 @@ private String prendreParole() {
 }
 
 public void recevoirCoup(int forceCoup) {
+	
+	assert this.force >= 0 ;
+	int force_avant_coup = this.force ;
+	
 	force -= forceCoup;
 	if (force > 0) {
 	parler("Aïe");
 	} else {
 	parler("J'abandonne...");
+	
+	assert this.force < force_avant_coup ;
 	}
 }
 	
